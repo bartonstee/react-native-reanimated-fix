@@ -167,6 +167,7 @@ RCT_EXPORT_METHOD(setValue:(nonnull NSNumber *)nodeID
     for (AnimatedOperation operation in operations) {
       operation(nodesManager);
     }
+    [nodesManager operationsBatchDidComplete];
   }];
 }
 
